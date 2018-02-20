@@ -17,7 +17,7 @@ function _main {
 
 function _init_env {
   KUBECTL=kubectl
-  KUBE_SYMBOL=$'\u2388 '
+  KUBE_SYMBOL='\033[0;34m'$'\u2638 \33[0;0m'
   DEFAULT_NAMESPACE_ALIAS="~"
   KUBEDIR="${HOME}/.kube"
   KUBECONFIG_FILE=${KUBECONFIG:-"${KUBEDIR}/config"}
